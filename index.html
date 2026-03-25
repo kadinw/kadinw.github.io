@@ -3,27 +3,137 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 0 20px;
-      line-height: 1.6;
-    }
-    h1 {
-      margin-bottom: 0;
-    }
-    .subtitle {
-      color: #555;
-      margin-top: 5px;
-    }
-  </style>
+  <title>Kadin W | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Your Name</h1>
-  <p class="subtitle">Software Engineer</p>
-  <p>Welcome to my GitHub website.</p>
+  <nav class="navbar">
+    <div class="container nav-container">
+      <div class="nav-name">Kadin W</div>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#resume">Resume</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero" id="home">
+    <div class="container">
+      <h1>Kadin W</h1>
+      <p class="tagline">Software Engineer | Automation | IT Operations</p>
+      <p class="intro-text">
+        Software engineer with experience building automation tools, improving production workflows, and supporting large-scale data and infrastructure operations.
+      </p>
+      <div class="hero-links">
+        <a href="#projects" class="button">View Projects</a>
+        <a href="#resume" class="button secondary">Resume</a>
+      </div>
+    </div>
+  </header>
+
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About</h2>
+      <div class="card">
+        <p>
+          I am a software engineer with a background in automation, IT operations, and large-scale data workflows. My work includes developing Python-based tools for production use, improving reliability across file and imaging pipelines, supporting infrastructure across Linux, macOS, and Windows environments, and communicating technical solutions clearly across cross-functional teams.
+        </p>
+        <p>
+          I also have experience working in environments that require accuracy, operational discipline, and handling of sensitive materials.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience" class="section">
+    <div class="container">
+      <h2>Experience</h2>
+
+      <div class="card">
+        <h3>Software Engineer</h3>
+        <p class="meta">Iron Mountain | Oct 2025 - Present | Kent, WA</p>
+        <p>
+          Build and maintain automation tools and technical workflows that support production operations, data handling, and process reliability. Collaborate across teams to solve technical problems and improve operational efficiency.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Data I/O Manager</h3>
+        <p class="meta">Iron Mountain | Aug 2022 - Oct 2025 | Kent, WA</p>
+        <p>
+          Managed large-scale data and imaging workflows, supported infrastructure and troubleshooting across Linux, macOS, and Windows systems, and developed scripts to streamline day-to-day production tasks in a high-accuracy environment.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="resume" class="section">
+    <div class="container">
+      <h2>Resume</h2>
+      <div class="card">
+        <p>
+          View my current resume here:
+        </p>
+        <p>
+          <a href="https://drive.google.com/file/d/1NO6bn8_nY2hdgI5BX8fo4bEA-g-_kt4J/view?usp=sharing" target="_blank" class="button">Open Resume</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="card">
+        <p>
+          Project details coming soon.
+        </p>
+        <p>
+          I will be adding selected software, automation, and data-focused work here.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="section">
+    <div class="container">
+      <h2>Skills</h2>
+      <div class="card">
+        <p><strong>Languages:</strong> Python, SQL, JavaScript</p>
+        <p><strong>Tools:</strong> Git, Docker, Redis, Kubernetes</p>
+        <p><strong>Systems:</strong> Linux, Windows, macOS</p>
+        <p><strong>Areas:</strong> Automation, API Development, Data Workflows, IT Operations, Debugging, Cross-Functional Communication</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="education" class="section">
+    <div class="container">
+      <h2>Education</h2>
+      <div class="card">
+        <h3>Bachelor's Degree in Progress</h3>
+        <p class="meta">Expected Graduation: August 2026</p>
+        <p>
+          Completing degree coursework online while working full time in software engineering and technical operations.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="container">
+      <h2>Contact</h2>
+      <div class="card">
+        <p>Email: your-email@example.com</p>
+        <p>GitHub: <a href="https://github.com/kadinw" target="_blank">github.com/kadinw</a></p>
+        <p>LinkedIn: <a href="#">Add your LinkedIn</a></p>
+      </div>
+    </div>
+  </section>
 </body>
 </html>
