@@ -78,25 +78,21 @@ body {
   margin-top: 30px;
 }
 
+/* BUTTONS */
 .button {
   display: inline-block;
   background: #2563eb;
   color: white;
   padding: 12px 20px;
   margin-right: 10px;
-  margin-top: 10px;   /* adds spacing between stacked buttons */
+  margin-top: 10px;
   border-radius: 8px;
   text-decoration: none;
 }
 
-.button {
-  display: inline-block;
-  margin-right: 10px;
-  margin-top: 10px;
-}
-
 .button:hover {
   opacity: 0.9;
+  text-decoration: none;
 }
 
 .button.secondary {
@@ -105,6 +101,7 @@ body {
   color: #2563eb;
 }
 
+/* SECTIONS */
 .section {
   padding: 60px 0;
 }
@@ -114,16 +111,13 @@ body {
   margin-bottom: 20px;
 }
 
+/* CARDS */
 .card {
   background: white;
   padding: 24px;
   border-radius: 12px;
   margin-bottom: 20px;
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
-}
-
-.card a.button {
-  margin-top: 12px;
 }
 
 .card h3 {
@@ -136,11 +130,12 @@ body {
   margin-bottom: 14px;
 }
 
-section a {
+/* NORMAL LINKS (exclude buttons) */
+section a:not(.button) {
   color: #2563eb;
   text-decoration: none;
 }
 
-section a:hover {
+section a:not(.button):hover {
   text-decoration: underline;
 }
