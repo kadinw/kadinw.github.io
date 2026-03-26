@@ -169,6 +169,19 @@ body::after {
   margin-bottom: 8px;
 }
 
+.card-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 12px;
+  flex-wrap: wrap;
+}
+
+.card-footer .button {
+  padding: 10px 16px;
+  font-size: 0.9rem;
+}
+
 .meta {
   color: #6b7280;
   margin-bottom: 14px;
