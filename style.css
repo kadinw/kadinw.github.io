@@ -6,26 +6,33 @@ html {
   scroll-behavior: smooth;
 }
 
-/* BACKGROUND IMAGE */
+html,
 body {
   margin: 0;
+  min-height: 100%;
   font-family: Arial, sans-serif;
   color: #1a1a1a;
   line-height: 1.6;
-
-  background: url("assets/BellevueSkylinePano.jpg") no-repeat center center fixed;
-  background-size: cover;
 }
 
-/* DARK OVERLAY FOR READABILITY */
+/* BACKGROUND IMAGE LAYER */
 body::before {
   content: "";
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(15, 23, 42, 0.6);
+  inset: 0;
+  background-image: url("assets/BellevueSkylinePano.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -2;
+}
+
+/* DARK OVERLAY FOR READABILITY */
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.55);
   z-index: -1;
 }
 
@@ -92,13 +99,13 @@ body::before {
 
 /* PROFILE IMAGE */
 .profile-pic {
-  width: 120px;
-  height: 120px;
+  width: 24px;
+  height: 24px;
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 20px;
-  border: 3px solid white;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  border: 1px solid white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
 }
 
 /* BUTTONS */
