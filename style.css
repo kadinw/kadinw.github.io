@@ -15,7 +15,6 @@ body {
   line-height: 1.6;
 }
 
-/* BACKGROUND IMAGE LAYER */
 :root {
   --bgY: 0px;
 }
@@ -32,7 +31,6 @@ body::before {
   z-index: -2;
 }
 
-/* DARK OVERLAY FOR READABILITY */
 body::after {
   content: "";
   position: fixed;
@@ -41,13 +39,11 @@ body::after {
   z-index: -1;
 }
 
-/* CONTAINER */
 .container {
   width: min(1000px, 90%);
   margin: 0 auto;
 }
 
-/* NAVBAR */
 .navbar {
   position: sticky;
   top: 0;
@@ -81,7 +77,6 @@ body::after {
   text-decoration: underline;
 }
 
-/* HERO */
 .hero {
   color: white;
   padding: 120px 0 100px;
@@ -105,7 +100,6 @@ body::after {
   margin-top: 30px;
 }
 
-/* PROFILE IMAGE */
 .profile-pic {
   width: 90px;
   height: 90px;
@@ -116,7 +110,6 @@ body::after {
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
 }
 
-/* BUTTONS */
 .button {
   display: inline-block;
   background: #2563eb;
@@ -140,7 +133,6 @@ body::after {
   color: white;
 }
 
-/* SECTIONS */
 .section {
   padding: 60px 0;
   position: relative;
@@ -154,7 +146,6 @@ body::after {
   text-shadow: 0 3px 12px rgba(0, 0, 0, 0.35);
 }
 
-/* CARDS */
 .card {
   background: rgba(255, 255, 255, 0.92);
   padding: 24px;
@@ -187,6 +178,8 @@ body::after {
   justify-content: space-between;
   align-items: center;
   gap: 20px;
+
+  min-height: 120px;
 }
 
 .edu-content {
@@ -194,11 +187,9 @@ body::after {
 }
 
 .edu-logo {
-  width: 60px;
-  height: auto;
+  height: 60px;
+  width: auto;
   object-fit: contain;
-  opacity: 0.9;
-  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
 }
 
 .meta {
@@ -206,7 +197,6 @@ body::after {
   margin-bottom: 14px;
 }
 
-/* NORMAL LINKS (NOT BUTTONS) */
 section a:not(.button) {
   color: #2563eb;
   text-decoration: none;
