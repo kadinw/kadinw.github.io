@@ -16,17 +16,20 @@ body {
 }
 
 /* BACKGROUND IMAGE LAYER */
+:root {
+  --bgY: 0px;
+}
+
 body::before {
   content: "";
   position: fixed;
   inset: 0;
   background-image: url("assets/BellevueSkylinePano.jpg");
-  background-position: center calc(50% + var(--bgShift, 0px));
+  background-position: center var(--bgY);
   background-repeat: no-repeat;
   background-size: cover;
   transform: scale(1.08);
   z-index: -2;
-  will-change: transform, background-position;
 }
 
 /* DARK OVERLAY FOR READABILITY */
@@ -104,8 +107,8 @@ body::after {
 
 /* PROFILE IMAGE */
 .profile-pic {
-  width: 72px;
-  height: 72px;
+  width: 90px;
+  height: 90px;
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 20px;
