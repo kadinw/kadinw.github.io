@@ -21,10 +21,12 @@ body::before {
   position: fixed;
   inset: 0;
   background-image: url("assets/BellevueSkylinePano.jpg");
-  background-position: center center;
+  background-position: center calc(50% + var(--bgShift, 0px));
   background-repeat: no-repeat;
   background-size: cover;
+  transform: scale(1.08);
   z-index: -2;
+  will-change: transform, background-position;
 }
 
 /* DARK OVERLAY FOR READABILITY */
@@ -62,6 +64,7 @@ body::after {
 .nav-name {
   font-size: 1.2rem;
   font-weight: bold;
+  color: #111827;
 }
 
 .nav-links a {
@@ -85,6 +88,8 @@ body::after {
 .hero h1 {
   margin: 0;
   font-size: 3rem;
+  color: white;
+  text-shadow: 0 3px 12px rgba(0, 0, 0, 0.35);
 }
 
 .intro-text {
@@ -99,13 +104,13 @@ body::after {
 
 /* PROFILE IMAGE */
 .profile-pic {
-  width: 24px;
-  height: 24px;
+  width: 72px;
+  height: 72px;
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 20px;
-  border: 1px solid white;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  border: 2px solid white;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
 }
 
 /* BUTTONS */
@@ -118,6 +123,7 @@ body::after {
   margin-top: 10px;
   border-radius: 8px;
   text-decoration: none;
+  border: 1px solid #2563eb;
 }
 
 .button:hover {
@@ -126,9 +132,9 @@ body::after {
 }
 
 .button.secondary {
-  background: transparent;
+  background: #2563eb;
   border: 1px solid #2563eb;
-  color: #2563eb;
+  color: white;
 }
 
 /* SECTIONS */
@@ -141,6 +147,8 @@ body::after {
 .section h2 {
   font-size: 2rem;
   margin-bottom: 20px;
+  color: white;
+  text-shadow: 0 3px 12px rgba(0, 0, 0, 0.35);
 }
 
 /* CARDS */

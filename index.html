@@ -192,5 +192,12 @@
       </div>
     </div>
   </section>
+  <script>
+  window.addEventListener("scroll", function () {
+    const bg = document.body;
+    const offset = window.scrollY * 0.15;
+    bg.style.setProperty("--bgShift", `${offset}px`);
+  });
+</script>
 </body>
 </html>
